@@ -87,6 +87,4 @@ test:
 #
 production:
   <<: *default
-  database: lms_app
-  username: postgres
-  password: trance
+  url: <%= ENV['DATABASE_URL'] %>
